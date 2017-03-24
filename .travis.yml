@@ -8,6 +8,6 @@ install:
 # command to run tests
 script: 
   - python es2012/manage.py test app01
-  - coverage run --source=es2012/manage.py test app01
+  - coverage run --source=es2012 es2012/manage.py test app01
 after_success:
   coveralls
