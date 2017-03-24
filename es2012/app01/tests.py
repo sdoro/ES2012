@@ -1,3 +1,10 @@
 from django.test import TestCase
 
-# Create your tests here.
+import os
+
+class BasicTests(TestCase):
+
+    def test_ver(self):
+        f = os.popen('pip freeze | grep -i django')
+        ver = f.read()
+        self.assertEqual(ver, "Django==1.10.6\n")

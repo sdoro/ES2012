@@ -13,3 +13,10 @@
     django-admin startproject es2012
     cd es2012
     ./manage.py startapp app01
+
+### 03. using Travis CI to run an elementary test
+
+    # edit shows/tests.py
+    > ../.travis.yml
+    # edit ../.travis.yml
+    # go to travis-ci.org and synce repos and enable ES2012
