@@ -25,12 +25,13 @@ SECRET_KEY = ')c_pn&yy&%sn1b)1666v_7+z1(1bwt0=4zu$^q$h-!+&%h+z(+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [u'es2012-sdoro.c9users.io']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'app01.apps.App01Config',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
