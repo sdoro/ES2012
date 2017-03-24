@@ -4,6 +4,10 @@ python:
 # command to install dependencies
 install:
   - pip install -r requirements.txt
+  - pip install coveralls
 # command to run tests
 script: 
   - python es2012/manage.py test app01
+  - coverage run --source=es2012/manage.py test app01
+after_success:
+  coveralls
