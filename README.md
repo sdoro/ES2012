@@ -45,3 +45,9 @@
     ./manage.py migrate app01
     # verify original SQL with ./manage.py sqlmigrate app01 000{0-7}
     ./manage.py migrate app01
+
+### populate and make fixtures
+
+	sqlite3 db.sqlite3 < ../data.sql 
+	./manage.py dumpdata app01 --indent 2 -o app01/fixtures/populate.json
+

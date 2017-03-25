@@ -1,0 +1,807 @@
+[
+{
+  "model": "app01.materiali",
+  "pk": "Am1",
+  "fields": {
+    "nome": "Amianto",
+    "potcancerogeno": false,
+    "cancerogeno": true,
+    "fuorilegge": true
+  }
+},
+{
+  "model": "app01.materiali",
+  "pk": "Ce4",
+  "fields": {
+    "nome": "Cementosalo",
+    "potcancerogeno": true,
+    "cancerogeno": false,
+    "fuorilegge": true
+  }
+},
+{
+  "model": "app01.materiali",
+  "pk": "Fo2",
+  "fields": {
+    "nome": "Fosfato",
+    "potcancerogeno": true,
+    "cancerogeno": false,
+    "fuorilegge": false
+  }
+},
+{
+  "model": "app01.materiali",
+  "pk": "Me3",
+  "fields": {
+    "nome": "Metilsalato",
+    "potcancerogeno": false,
+    "cancerogeno": false,
+    "fuorilegge": true
+  }
+},
+{
+  "model": "app01.materiali",
+  "pk": "Mi5",
+  "fields": {
+    "nome": "Minaralato",
+    "potcancerogeno": false,
+    "cancerogeno": true,
+    "fuorilegge": true
+  }
+},
+{
+  "model": "app01.azienda",
+  "pk": "Asl05",
+  "fields": {
+    "indirizzo": "via Bernardi, 65 30100 Verona",
+    "email": "Asl05@min.salute.it",
+    "fax": "035/7987231"
+  }
+},
+{
+  "model": "app01.azienda",
+  "pk": "Asl10",
+  "fields": {
+    "indirizzo": "via Ermanno, 25 64500 Belluno",
+    "email": "Asl10@min.salute.it",
+    "fax": "041/468732"
+  }
+},
+{
+  "model": "app01.azienda",
+  "pk": "Asl13",
+  "fields": {
+    "indirizzo": "via Formentera, 10 30100 Venezia",
+    "email": "Asl13@min.salute.it",
+    "fax": "041/446798"
+  }
+},
+{
+  "model": "app01.azienda",
+  "pk": "Asl20",
+  "fields": {
+    "indirizzo": "via Garibaldi, 54 30100 Vicenza",
+    "email": "Asl20@min.salute.it",
+    "fax": "041/445567"
+  }
+},
+{
+  "model": "app01.azienda",
+  "pk": "Asl56",
+  "fields": {
+    "indirizzo": "via Giacinto, 106 64003 Treviso",
+    "email": "Asl56@min.salute.it",
+    "fax": "035/7677889"
+  }
+},
+{
+  "model": "app01.funzionari",
+  "pk": "ABNDJN50W44J674C",
+  "fields": {
+    "nome": "Abdul",
+    "cognome": "Dajan",
+    "password": "trewyjekmmit"
+  }
+},
+{
+  "model": "app01.funzionari",
+  "pk": "CCHMHL70E11L840W",
+  "fields": {
+    "nome": "Michelangelo",
+    "cognome": "Occhipinti",
+    "password": "jgglaghgah"
+  }
+},
+{
+  "model": "app01.funzionari",
+  "pk": "LNAFVV57A78R487F",
+  "fields": {
+    "nome": "Luana",
+    "cognome": "fevervi",
+    "password": "jkljkhjljhh"
+  }
+},
+{
+  "model": "app01.funzionari",
+  "pk": "NNASFE78S12E678D",
+  "fields": {
+    "nome": "Anna",
+    "cognome": "Sefendi",
+    "password": "erytryyu"
+  }
+},
+{
+  "model": "app01.funzionari",
+  "pk": "SSFCBD30A22G465W",
+  "fields": {
+    "nome": "Susanna",
+    "cognome": "Cibidan",
+    "password": "kh\u00f2lfkj\u00f2lkjk"
+  }
+},
+{
+  "model": "app01.immobile",
+  "pk": "imm1",
+  "fields": {
+    "indirizzo": "fgsggdsgfdsggfds",
+    "comune": "Venezia",
+    "numaz": "Asl13"
+  }
+},
+{
+  "model": "app01.immobile",
+  "pk": "imm10",
+  "fields": {
+    "indirizzo": "sgfdsgfgggf",
+    "comune": "Treviso",
+    "numaz": "Asl56"
+  }
+},
+{
+  "model": "app01.immobile",
+  "pk": "imm2",
+  "fields": {
+    "indirizzo": "sgfdsgfdsgfdsg",
+    "comune": "Belluno",
+    "numaz": "Asl10"
+  }
+},
+{
+  "model": "app01.immobile",
+  "pk": "imm3",
+  "fields": {
+    "indirizzo": "gfgfdsgdsgsg",
+    "comune": "Verona",
+    "numaz": "Asl05"
+  }
+},
+{
+  "model": "app01.immobile",
+  "pk": "imm4",
+  "fields": {
+    "indirizzo": "sgsgdsgfd",
+    "comune": "Verona",
+    "numaz": "Asl05"
+  }
+},
+{
+  "model": "app01.immobile",
+  "pk": "imm5",
+  "fields": {
+    "indirizzo": "sdgfdsgfdsg",
+    "comune": "Treviso",
+    "numaz": "Asl56"
+  }
+},
+{
+  "model": "app01.immobile",
+  "pk": "imm6",
+  "fields": {
+    "indirizzo": "sgfdgfdgfd",
+    "comune": "Vicenza",
+    "numaz": "Asl20"
+  }
+},
+{
+  "model": "app01.immobile",
+  "pk": "imm7",
+  "fields": {
+    "indirizzo": "sgsgdsgf",
+    "comune": "Treviso",
+    "numaz": "Asl56"
+  }
+},
+{
+  "model": "app01.immobile",
+  "pk": "imm8",
+  "fields": {
+    "indirizzo": "sgfdsgfdsgfds",
+    "comune": "Belluno",
+    "numaz": "Asl10"
+  }
+},
+{
+  "model": "app01.immobile",
+  "pk": "imm9",
+  "fields": {
+    "indirizzo": "sfgdsgfdsgdsg",
+    "comune": "Venezia",
+    "numaz": "Asl13"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR1",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm1"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR10",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm5"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR11",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm4"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR12",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "NON APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm2"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR13",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm3"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR14",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm2"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR15",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm1"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR16",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "NON APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm3"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR17",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm8"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR18",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm9"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR2",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "NON APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm1"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR20",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "NON APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm4"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR21",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "NON APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm6"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR22",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm2"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR23",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "NON APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm7"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR24",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm9"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR25",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm10"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR3",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "NON APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm6"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR5",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm8"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR6",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm9"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR7",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm10"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR8",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "NON APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm1"
+  }
+},
+{
+  "model": "app01.pratica",
+  "pk": "PR9",
+  "fields": {
+    "apertprat": null,
+    "primsoll": null,
+    "rispprimsoll": null,
+    "secsoll": null,
+    "inizlavori": null,
+    "finlavori": null,
+    "collaudo": null,
+    "esitcoll": "APPROVATO",
+    "chiusuraprat": null,
+    "codfunz": "CCHMHL70E11L840W",
+    "codimm": "imm7"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 1,
+  "fields": {
+    "codimm": "imm1",
+    "codmat": "Am1"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 2,
+  "fields": {
+    "codimm": "imm1",
+    "codmat": "Fo2"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 3,
+  "fields": {
+    "codimm": "imm1",
+    "codmat": "Me3"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 4,
+  "fields": {
+    "codimm": "imm1",
+    "codmat": "Ce4"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 5,
+  "fields": {
+    "codimm": "imm2",
+    "codmat": "Am1"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 6,
+  "fields": {
+    "codimm": "imm2",
+    "codmat": "Mi5"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 7,
+  "fields": {
+    "codimm": "imm2",
+    "codmat": "Fo2"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 8,
+  "fields": {
+    "codimm": "imm3",
+    "codmat": "Mi5"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 9,
+  "fields": {
+    "codimm": "imm3",
+    "codmat": "Fo2"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 10,
+  "fields": {
+    "codimm": "imm4",
+    "codmat": "Am1"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 11,
+  "fields": {
+    "codimm": "imm4",
+    "codmat": "Ce4"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 12,
+  "fields": {
+    "codimm": "imm5",
+    "codmat": "Am1"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 13,
+  "fields": {
+    "codimm": "imm6",
+    "codmat": "Fo2"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 14,
+  "fields": {
+    "codimm": "imm6",
+    "codmat": "Me3"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 15,
+  "fields": {
+    "codimm": "imm7",
+    "codmat": "Ce4"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 16,
+  "fields": {
+    "codimm": "imm7",
+    "codmat": "Am1"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 17,
+  "fields": {
+    "codimm": "imm8",
+    "codmat": "Mi5"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 18,
+  "fields": {
+    "codimm": "imm8",
+    "codmat": "Fo2"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 19,
+  "fields": {
+    "codimm": "imm9",
+    "codmat": "Mi5"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 20,
+  "fields": {
+    "codimm": "imm9",
+    "codmat": "Fo2"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 21,
+  "fields": {
+    "codimm": "imm9",
+    "codmat": "Am1"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 22,
+  "fields": {
+    "codimm": "imm10",
+    "codmat": "Am1"
+  }
+},
+{
+  "model": "app01.schedaimmobile",
+  "pk": 23,
+  "fields": {
+    "codimm": "imm10",
+    "codmat": "Ce4"
+  }
+}
+]

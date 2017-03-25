@@ -73,13 +73,13 @@ class Immobile(models.Model):
 
 class Pratica(models.Model):
     codprat = models.CharField(max_length=100, primary_key=True)
-    apertprat = models.DateField()
-    primsoll = models.DateField()
+    apertprat = models.DateField(null = True)
+    primsoll = models.DateField(null = True)
     rispprimsoll = models.DateField(null = True)
     secsoll = models.DateField(null = True)
-    inizlavori = models.DateField()
-    finlavori = models.DateField()
-    collaudo = models.DateField()
+    inizlavori = models.DateField(null = True)
+    finlavori = models.DateField(null = True)
+    collaudo = models.DateField(null = True)
     esitcoll = models.CharField(max_length=20)
     chiusuraprat = models.DateField(null = True)
     codfunz = models.ForeignKey('app01.Funzionari')
@@ -92,5 +92,5 @@ class Pratica(models.Model):
 #);
 
 class Schedaimmobile(models.Model):
-    codimm = models.ForeignKey('app01.Funzionari')
-    codmat = models.ForeignKey('app01.Immobile')
+    codimm = models.ForeignKey('app01.Immobile')
+    codmat = models.ForeignKey('app01.Materiali')
