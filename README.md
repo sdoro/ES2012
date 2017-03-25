@@ -1,4 +1,6 @@
 
+[![Coverage Status](https://coveralls.io/repos/github/sdoro/django-migration/badge.svg?branch=master)](https://coveralls.io/github/sdoro/django-migration?branch=master)
+
 ### 01. create & setup virtualenv
 
     echo "*.py[cod]" > .gitignore
