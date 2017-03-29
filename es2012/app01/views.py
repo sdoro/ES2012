@@ -10,9 +10,21 @@ from django.utils import timezone
 
 def q1(request):
     p1 = Pratica.objects.filter(chiusuraprat__isnull=True,apertprat__lte=(timezone.now()-relativedelta(years=1)))
-    html = ""
+    html = '''<table style="width:50%">
+  <tr>
+    <th align="left">codice pratica</th>
+    <th align="left">apertura il</th> 
+    <th align="left">codice f.</th>
+    <th align="left">codice i.</th>
+  </tr>'''
+  
     for p in p1:
-        print p.codprat, p.apertprat, p.codfunz, p.codimm
-        html=html+"<br>"+p.codprat+", "+str(p.apertprat)+", "+str(p.codfunz)+", "+str(p.codimm)
-    #html = "<html><body>Welcome</body></html>"
+        #print p.codprat, p.apertprat, p.codfunz, p.codimm
+        html+="\n<tr>" + \
+          "\n\t<td>"+p.codprat+"</td>" + \
+          "\n\t<td>"+str(p.apertprat)+"</td>" + \
+          "\n\t<td>"+str(p.codfunz)+"</td>" + \
+          "\n\t<td>"+str(p.codimm)+"</td>" + \
+          "\n</tr>"
+    html+="\n</table>"
     return HttpResponse(html)

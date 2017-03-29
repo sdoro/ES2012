@@ -52,13 +52,21 @@
 
 ### 05. populate and make fixtures
 
-	sqlite3 db.sqlite3 < ../data.sql 
-	./manage.py dumpdata app01 --indent 2 -o app01/fixtures/populate.json
+    sqlite3 db.sqlite3 < ../data.sql 
+    ./manage.py dumpdata app01 --indent 2 -o app01/fixtures/populate.json
 
 ### 06. re-populate database using fixtures
 
-	rm db.sqlite3 app01/migrations/000*
-	./manage.py makemigrations
-	./manage.py migrate
-	./manage.py loaddata app01/fixtures/populate.json 
+    rm db.sqlite3 app01/migrations/000*
+    ./manage.py makemigrations
+    ./manage.py migrate
+    ./manage.py loaddata app01/fixtures/populate.json 
 
+### 07. implementation of query #1
+
+    # add __str__ to models
+    > app01/urls.py
+    # edit app01/urls.py
+    # edit app01/views.py
+    # edit es2012/urls.py
+    echo "python-dateutil" >> ../requirements.txt
