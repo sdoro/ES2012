@@ -28,3 +28,10 @@ def q1(request):
           "\n</tr>"
     html+="\n</table>"
     return HttpResponse(html)
+
+def q1t(request):
+  p1 = Pratica.objects.filter(chiusuraprat__isnull=True,apertprat__lte=(timezone.now()-relativedelta(years=1)))
+  query = []
+  for p in p1:
+    query.append({'cp': p.codprat, 'ap': str(p.apertprat), 'cf': str(p.codfunz), 'ci': str(p.codimm) })
+  return render(request, 'estesa.html', {'q1t': query})

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Block-Title: {{ q1t.title }}
+{% endblock %}
+
+{% block query %}
+
+<table style="width:50%">
+  <tr>
+    <th align="left">codice pratica</th>
+    <th align="left">apertura il</th> 
+    <th align="left">codice f.</th>
+    <th align="left">codice i.</th>
+  </tr>
+  
+    {% for p in q1t %}
+    <tr>
+        <td>{{ p.cp }}</td>
+        <td>{{ p.ap }}</td>
+        <td>{{ p.cf }}</td>
+        <td>{{ p.ci }}</td>
+    </tr>
+    {% endfor %}
+
+{% endblock %}

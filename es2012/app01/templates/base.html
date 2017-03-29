@@ -1,0 +1,17 @@
+{% load static %}
+<!doctype html>
+<html>
+    
+<head>
+  <title>{% block title %}This is block title (default){% endblock %}</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'app01/css/style.css' %}" />
+</head>
+
+<body>
+    
+  <div>
+    {% block query %}This is block query (default){% endblock %}
+  </div>
+  
+</body>
+</html>

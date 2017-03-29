@@ -70,3 +70,13 @@
     # edit app01/views.py
     # edit es2012/urls.py
     echo "python-dateutil" >> ../requirements.txt
+
+### 08. make an html template
+
+    mkdir app01/templates
+    # make & edit app01/templates/base.html
+    # make & edit app01/templates/estesa.html
+    # edit app01/views.py
+    # edit app01/urls.py
+    mkdir -p static/app01/css
+    # make & edit app01/static/app01/css/style.css
