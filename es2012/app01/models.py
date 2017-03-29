@@ -16,6 +16,9 @@ class Materiali(models.Model):
     potcancerogeno =  models.BooleanField()
     cancerogeno =  models.BooleanField()
     fuorilegge =  models.BooleanField()
+    
+    def __str__(self):
+        return self.sigla
 
 #CREATE TABLE azienda (
 #        numero varchar PRIMARY KEY,
@@ -29,6 +32,9 @@ class Azienda(models.Model):
     indirizzo = models.CharField(max_length=100)
     email = models.CharField(max_length=30)
     fax = models.CharField(max_length=20)
+    
+    def __str__(self):
+        return self.numero
 
 #CREATE TABLE funzionari (
 #        codfisc varchar PRIMARY KEY,
@@ -43,6 +49,9 @@ class Funzionari(models.Model):
     cognome = models.CharField(max_length=20)
     password = models.CharField(max_length=20)
 
+    def __str__(self):
+        return self.codfisc
+
 #CREATE TABLE immobile (
 #        codimm varchar PRIMARY KEY,
 #        indirizzo varchar (100),
@@ -55,6 +64,9 @@ class Immobile(models.Model):
     indirizzo = models.CharField(max_length=100)
     comune = models.CharField(max_length=30)
     numaz = models.ForeignKey('Azienda')
+
+    def __str__(self):
+        return self.codimm
 
 #CREATE TABLE pratica (
 #        codprat varchar PRIMARY KEY,
@@ -85,6 +97,9 @@ class Pratica(models.Model):
     codfunz = models.ForeignKey('app01.Funzionari')
     codimm = models.ForeignKey('app01.Immobile')
 
+    def __str__(self):
+        return self.codprat
+
 #CREATE TABLE schedaimmobile (
 #        id SERIAL PRIMARY KEY,
 #        codimm varchar REFERENCES immobile(codimm),
@@ -94,3 +109,6 @@ class Pratica(models.Model):
 class Schedaimmobile(models.Model):
     codimm = models.ForeignKey('app01.Immobile')
     codmat = models.ForeignKey('app01.Materiali')
+
+    def __str__(self):
+        return str(self.id)
