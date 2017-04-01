@@ -12,10 +12,10 @@ from django.db import models
 
 class Materiali(models.Model):
     sigla =  models.CharField(max_length=100, primary_key=True)
-    nome = models.CharField(max_length=20, null=True)
-    potcancerogeno =  models.BooleanField()
-    cancerogeno =  models.BooleanField()
-    fuorilegge =  models.BooleanField()
+    nome = models.CharField(max_length=20)
+    potcancerogeno =  models.BooleanField() # BooleanFields do not accept null values.
+    cancerogeno =  models.BooleanField()    # BooleanFields do not accept null values.
+    fuorilegge =  models.BooleanField()     # BooleanFields do not accept null values.
     
     def __str__(self):
         return self.sigla
@@ -61,8 +61,8 @@ class Funzionari(models.Model):
 
 class Immobile(models.Model):
     codimm = models.CharField(max_length=100, primary_key=True)
-    indirizzo = models.CharField(max_length=100)
-    comune = models.CharField(max_length=30)
+    indirizzo = models.CharField(max_length=100, null = True)
+    comune = models.CharField(max_length=30, null = True)
     numaz = models.ForeignKey('Azienda')
 
     def __str__(self):

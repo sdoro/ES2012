@@ -9,7 +9,7 @@ from dateutil.relativedelta import relativedelta
 from django.utils import timezone
 
 def q1(request):
-    p1 = Pratica.objects.filter(chiusuraprat__isnull=True,apertprat__lte=(timezone.now()-relativedelta(years=1)))
+    p1 = Pratica.objects.filter(chiusuraprat__isnull=True, apertprat__lte=(timezone.now()-relativedelta(years=1)))
     html = '''<table style="width:50%">
   <tr>
     <th align="left">codice pratica</th>
@@ -30,8 +30,28 @@ def q1(request):
     return HttpResponse(html)
 
 def q1t(request):
-  p1 = Pratica.objects.filter(chiusuraprat__isnull=True,apertprat__lte=(timezone.now()-relativedelta(years=1)))
+  p1 = Pratica.objects.filter(chiusuraprat__isnull=True, apertprat__lte=(timezone.now()-relativedelta(years=1)))
   query = []
   for p in p1:
     query.append({'cp': p.codprat, 'ap': str(p.apertprat), 'cf': str(p.codfunz), 'ci': str(p.codimm) })
+  return render(request, 'estesa.html', {'q1t': query})
+
+
+
+from django.db import connection
+
+def q1tRow(request):
+  query = '''
+SELECT p.codprat, p.apertprat, i.codimm, i.codimm, '1 YEAR'
+FROM app01_pratica p, app01_immobile i
+WHERE chiusuraprat IS NULL
+      AND current_date > P.apertprat + INTERVAL 1 year
+      AND p.codimm_id = i.codimm
+ORDER BY i.comune;
+'''
+  cursor = connection.cursor()
+  cursor.execute(query)
+  query = []
+  for row in cursor:
+    query.append({'cp': row[0], 'ap': row[1], 'cf': row[2], 'ci': row[3] })
   return render(request, 'estesa.html', {'q1t': query})
