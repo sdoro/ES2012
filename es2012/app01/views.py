@@ -10,14 +10,19 @@ from django.utils import timezone
 
 def q1(request):
     p1 = Pratica.objects.filter(chiusuraprat__isnull=True, apertprat__lte=(timezone.now()-relativedelta(years=1)))
-    html = '''<table style="width:50%">
+
+    html = '''<head>
+  <title>Query #1</title>
+</head>'''
+
+    html += '''<table style="width:50%">
   <tr>
     <th align="left">codice pratica</th>
     <th align="left">apertura il</th> 
     <th align="left">codice f.</th>
     <th align="left">codice i.</th>
   </tr>'''
-  
+
     for p in p1:
         #print p.codprat, p.apertprat, p.codfunz, p.codimm
         html+="\n<tr>" + \
@@ -29,18 +34,22 @@ def q1(request):
     html+="\n</table>"
     return HttpResponse(html)
 
+
+
 def q1t(request):
   p1 = Pratica.objects.filter(chiusuraprat__isnull=True, apertprat__lte=(timezone.now()-relativedelta(years=1)))
+  title = 'Query #1 with template'
   query = []
   for p in p1:
     query.append({'cp': p.codprat, 'ap': str(p.apertprat), 'cf': str(p.codfunz), 'ci': str(p.codimm) })
-  return render(request, 'estesa.html', {'q1t': query})
+  return render(request, 'estesa.html', {'title': title, 'q1t': query})
 
 
 
 from django.db import connection
 
 def q1tRow(request):
+  title = 'Query #1 with template but row'
   query = '''
 SELECT p.codprat, p.apertprat, i.codimm, i.codimm
 FROM app01_pratica p, app01_immobile i
@@ -54,4 +63,4 @@ ORDER BY i.comune;
   query = []
   for row in cursor:
     query.append({'cp': row[0], 'ap': row[1], 'cf': row[2], 'ci': row[3] })
-  return render(request, 'estesa.html', {'q1t': query})
+  return render(request, 'estesa.html', {'title': title, 'q1t': query})
