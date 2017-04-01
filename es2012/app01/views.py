@@ -42,10 +42,10 @@ from django.db import connection
 
 def q1tRow(request):
   query = '''
-SELECT p.codprat, p.apertprat, i.codimm, i.codimm, '1 YEAR'
+SELECT p.codprat, p.apertprat, i.codimm, i.codimm
 FROM app01_pratica p, app01_immobile i
 WHERE chiusuraprat IS NULL
-      AND current_date > P.apertprat + INTERVAL 1 year
+      AND date('now') > date(P.apertprat, '+1 year')
       AND p.codimm_id = i.codimm
 ORDER BY i.comune;
 '''
